@@ -38,7 +38,9 @@ SELECT count(*) as studenti_iscritti , year(enrolment_date) FROM `students` GROU
 
 SELECT count(*) as number_of_teachers , office_address FROM `teachers` GROUP BY office_address;
 
+--3group Calcolare la media dei voti di ogni appello d'esame
 
+SELECT ROUND(AVG(vote),2) as media_voto , exam_id as numero_appello FROM `exam_student` GROUP by numero_appello;
 
 
 
