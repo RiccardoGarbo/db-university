@@ -30,6 +30,9 @@ SELECT count(*)  FROM `departments`
 
 SELECT count(*) FROM `teachers` where phone is NOT null;
 
+-- 1group Contare quanti iscritti ci sono stati ogni anno
+
+SELECT count(*) as studenti_iscritti , year(enrolment_date) FROM `students` GROUP by YEAR(enrolment_date);
 
 
 
