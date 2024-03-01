@@ -34,6 +34,10 @@ SELECT count(*) FROM `teachers` where phone is NOT null;
 
 SELECT count(*) as studenti_iscritti , year(enrolment_date) FROM `students` GROUP by YEAR(enrolment_date);
 
+--2group  Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+SELECT count(*) as number_of_teachers , office_address FROM `teachers` GROUP BY office_address;
+
 
 
 
