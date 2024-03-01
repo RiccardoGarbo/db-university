@@ -24,7 +24,9 @@ SELECT * FROM `degrees` WHERE name LIKE '%laurea magistrale%';
 
 --7 Da quanti dipartimenti è composta l'università? (12)
 
-SELECT * FROM `departments`
+SELECT count(*)  FROM `departments`
+
+
 
 
  
