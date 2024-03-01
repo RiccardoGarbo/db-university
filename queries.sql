@@ -22,6 +22,10 @@ SELECT * FROM `exams` WHERE DATE(date) = '2020-06-20' AND hour > '14:00:00';
 
 SELECT * FROM `degrees` WHERE name LIKE '%laurea magistrale%';
 
+--7 Da quanti dipartimenti è composta l'università? (12)
+
+SELECT * FROM `departments`
+
 
  
 
